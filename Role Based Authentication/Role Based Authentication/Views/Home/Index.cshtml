@@ -1,0 +1,12 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<h2>welcome to the Authorized Page <b>@User.Identity.Name</b></h2>
+<br />
+<h2>you are a @ViewData["role"]</h2> 
+
+<br />
+@Html.ActionLink("Logout", "Logout", "Login", null, null)
+@Html.ActionLink("ManagerPage", "ManagerPage", "Home")
+@Html.ActionLink("EmployeePage", "EmployeePage", "Home")
